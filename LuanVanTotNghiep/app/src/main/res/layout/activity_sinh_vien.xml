@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SinhVienActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btnExit"
+            android:layout_width="83dp"
+            android:layout_height="77dp"
+            android:src="@drawable/ic_exit"
+            android:contentDescription="Thoát"
+            />
+        <ImageView
+            android:id="@+id/btnAdd"
+            android:layout_width="83dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginLeft="240dp"
+            android:src="@drawable/ic_add"
+            android:contentDescription="Thêm mới"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:text="Chọn lớp: "
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnLop"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DANH SÁCH SINH VIÊN"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:background="#AEDD77"
+            />
+        <ListView
+            android:id="@+id/lvDSSinhVien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
